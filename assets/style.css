@@ -200,6 +200,11 @@ section {
         & a {
             text-decoration: none;
             color: var(--primary);
+            transition: all .5s ease-out;
+        }
+
+        & a:hover {
+            transform: scale(1.03);
         }
     }
 }
