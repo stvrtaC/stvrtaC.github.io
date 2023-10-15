@@ -197,98 +197,11 @@ section {
             object-fit: cover;
         }
 
-        & > .span2columns {
-            grid-column: span 2;
-        }
-
-        & > .span2rows {
-            grid-row: span 2;
-        }
-
         & a {
             text-decoration: none;
             color: var(--primary);
         }
     }
-}
-
-.gallery_card {
-    position: relative;
-    height: 52rem;
-}
-
-.gallery_card_item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: .3rem;
-    overflow: hidden;
-    
-    transition: all .8s ease;
-    
-    &:hover::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #00000071;
-    }
-
-    & > * {
-        display: block;
-        font-weight: 700;
-        font-size: 8rem;
-        transform: translateX(-50%);
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        opacity: 1;
-        opacity: 0;
-        transition: all .5s ease;
-        z-index: 200;
-        
-    }
-    &:hover > *{
-        left: 50%;
-        opacity: 1;
-    }
-
-}
-
-.school {
-    background-image: url(/assets/imgs/skola/drak.jpg);
-    background-size: cover;    
-}
-.stuzkova {
-    background-image: url(/assets/imgs/stuzkova/stuzkova.jpg);
-    background-size: cover;
-    & > * {
-        font-size: 6rem;
-        transform: translateX(-50%) translateY(40%);
-    }
-}
-.vylety {
-    background-image: url(/assets/imgs/vylety/svaty.jpg);
-    background-size: cover;
-}
-.ima3 {
-    background-image: url(/assets/imgs/ima3/ima.jpg);
-    background-size: cover;
-}
-.sportove {
-    background-image: url(/assets/imgs/sportove/sportove.jpg);
-    background-size: cover;
-    & > * {
-        font-size: 6rem;
-    }
-}
-.zabava {
-    background-image: url(/assets/imgs/zabava/hlado.JPG);
-    background-size: cover;
 }
 
 @media only screen and (max-width:830px){
